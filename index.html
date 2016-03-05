@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+	<head>  
+		<meta charset="utf-8">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+		<!--link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="framestyle.css">
+		<link rel="stylesheet" type="text/css" href="countdown.css"-->
+
+		<style type="text/css"> 
+			.time-label {
+				font-weight: bold;
+				font-size: 130%;
+			}
+			.time_circles {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			.time_circles > div {
+				position: absolute;
+				text-align: center;
+			}
+			.time_circles > div > h4 {
+				cursor: default;
+				margin: 0px;
+				padding: 0px;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: 'Century Gothic', Arial;
+			}
+			.time_circles > div > span {
+				cursor: default;
+				display: block;
+				width: 100%;
+				text-align: center;
+				font-family: 'Century Gothic', Arial;
+				font-size: 300%;
+				margin-top: 0.4em;
+				font-weight: bold;
+			}
+		</style>
+
+	</head> 
+	<body>
+		<div id="mb1humgQ-cnt" style="max-width:512px;overflow:hidden;text-align:center;">
+			<div class="time-label" id="msgmb1humgQ-countdown"/>
+			
+			<div id="mb1humgQ-countdown" class="countdown" style="width: 512px; height: 120px; padding-left: 16.5px;" 
+				data-date="2018-01-18T12:00:00Z" data-end-text="Fin!" 
+				data-days-color="#EFE532" data-hours-color="#EFE532" data-minutes-color="#EFE532" data-seconds-color="#EFE532" 
+				data-days-text="Jours" data-hours-text="Heures" data-minutes-text="Minutes" data-seconds-text="Secondes" 
+				data-circle-bkcolor="#24463E" data-count-up="0" data-tc-id="7756cddf-1974-f7ad-d629-f3bd581c4cad">
+				<div class="time_circles">
+					<canvas width="512" height="120"/>
+					<div id="mb1humgQ-countdownDays" class="textDiv_Days" style="top: 42px; left: 0px; width: 120px;">
+						<h4 id="mb1humgQ-countdownDaysh" style="font-size: 8px; line-height: 8px;">Jours</h4>
+						<span id="mb1humgQ-countdownDaysn" style="font-size: 25px; line-height: 8px;">42</span>
+					</div>
+					<div id="mb1humgQ-countdownHours" class="textDiv_Hours" style="top: 42px; left: 120px; width: 120px;">
+						<h4 id="mb1humgQ-countdownHoursh" style="font-size: 8px; line-height: 8px;">Heures</h4>
+						<span id="mb1humgQ-countdownHoursn" style="font-size: 25px; line-height: 8px;">17</span>
+					</div>
+					<div id="mb1humgQ-countdownMinutes" class="textDiv_Minutes" style="top: 42px; left: 240px; width: 120px;">
+						<h4 id="mb1humgQ-countdownMinutesh" style="font-size: 8px; line-height: 8px;">Minutes</h4>
+						<span id="mb1humgQ-countdownMinutesn" style="font-size: 25px; line-height: 8px;">50</span>
+					</div>
+					<div id="mb1humgQ-countdownSeconds" class="textDiv_Seconds" style="top: 42px; left: 360px; width: 120px;">
+						<h4 id="mb1humgQ-countdownSecondsh" style="font-size: 8px; line-height: 8px;">Secondes</h4>
+						<span id="mb1humgQ-countdownSecondsn" style="font-size: 25px; line-height: 8px;">26</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="countdown.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".countdown").TimeCircles();
+			});
+		</script>
+	</body>
+</html>
